@@ -78,10 +78,12 @@
 					<div class='close-modal' ng-click='close($index)'></div>
 					<span class="close" ng-click='close($index)'>&times;</span>
 					<br>
-					<h2>{{app.name}}</h2>					
-					<img src='{{app.img}}' class='modal-img'>
+					<h2>{{app.name}}</h2>
+					<a href="{{app.link}}" target="_blank">
+						<img src='{{app.img}}' ng-click='' class='modal-img'>
+					</a>
 				    <!-- Modal content -->
-				    <div class="modal-content">
+				    <div class="modal-contents">
 				  		{{app.info}}
 				    </div>
 				</div>
@@ -93,7 +95,7 @@
 	<br>
 	<div class='contact-div'>
 		<div class='contact-title'> Contact Me</div>
-		<div class='row'>
+		<div class='row text-left'>
 			<div class='col-md-8'>
 				<a href="mailto:ritwikbhardwaj098@gmail.com">
 					<i class="fa fa-envelope-o" aria-hidden="true"></i>

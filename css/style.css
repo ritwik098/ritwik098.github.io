@@ -33,7 +33,7 @@ p {
     text-align: justify;
 }
 
-a {
+#contact-div a {
 	color: white;
 	display: block;
     line-height: 32px;
@@ -89,6 +89,10 @@ a:active {
 	.modal-img {
 		height: 15%;
 	}
+
+	.modal-contents {
+		font-size: 15px;
+	}
 }
 
 @media screen and (min-width: 400px) {
@@ -129,6 +133,9 @@ a:active {
 	}
 	.modal-img {
 		height: 30%;
+	}
+	.modal-contents{
+		font-size: 20px;
 	}
 }
 
@@ -327,6 +334,10 @@ a:active {
     margin: 10px;
 }
 
+.text-left {
+	text-align: left;
+}
+
 /***Modal view****/
 
 /* The Modal (background) */
@@ -350,7 +361,7 @@ a:active {
 }
 
 /* Modal Content/Box */
-.modal-content {
+.modal-contents {
 
 	position: relative;
 	margin-left: 15%;
@@ -362,7 +373,6 @@ a:active {
 	text-align: center;
 	width: auto;
 	background: none;
-	font-size: 15px;
 }
 
 .close-modal {
